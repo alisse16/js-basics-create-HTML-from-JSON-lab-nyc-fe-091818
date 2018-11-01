@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
   terminatorButton.addEventListener('click', fillInMovieData)
 });
 
-function fillInMovieData(){
+function fillInMovieData(movie){
   const currentMovie = movies['Titanic']
   
   const title = currentMovie.title //find the thing
