@@ -40,8 +40,8 @@ function fillInMovieData(movie){
   audienceScoreDiv.innerText = audienceScore
   
   //clear out old cast memebers
+  const div = document.querySelector('#cast')
   for (let oldCastMember of castDiv.childNodes) {
-    const div = document.querySelector('#cast')
     oldCastMember.remove()
   }
   
