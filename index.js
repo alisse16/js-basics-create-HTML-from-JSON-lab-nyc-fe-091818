@@ -39,6 +39,12 @@ function fillInMovieData(movie){
   const audienceScoreDiv = document.querySelector('#audienceScore') 
   audienceScoreDiv.innerText = audienceScore
   
+  //clear out old cast memebers
+  for (let oldCastMember of castDiv.childNodes) {
+    const div = document.querySelector('#cast')
+    oldCastMember.remove()
+  }
+  
   //cast and reviews are arrays
   for (let castMember of currentMovie.cast) {
    const li = document.createElement('li') //make the element 
