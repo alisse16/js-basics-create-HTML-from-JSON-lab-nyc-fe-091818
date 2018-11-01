@@ -39,7 +39,7 @@ function fillInMovieData(){
   audienceScoreDiv.innerText = audienceScore
   
   //cast and reviews are arrays
-  for (let castMember in currentMovie.cast) {
+  for (let castMember of currentMovie.cast) {
    const li = document.createElement('li') //make the element 
    li.innerText = castMember.role + ':' + castMember.actor //fill the element
    const div = document.querySelector('#cast')// put it on the page
