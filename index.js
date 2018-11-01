@@ -45,4 +45,5 @@ function fillInMovieData(){
    const div = document.querySelector('#cast')// put it on the page
    div.appendChild(li) //put it on the page 
 }
+}
 
