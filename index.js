@@ -46,7 +46,7 @@ function fillInMovieData(){
    div.appendChild(li) //put it on the page 
     }
   
-  for (let reveiw of currentMovie.reviews) {
+  for (let review of currentMovie.reviews) {
    const li = document.createElement('li') //make the element 
    li.innerText = review.username + ':' + review.content //fill the element
    const div = document.querySelector('#reviews')// put it on the page
