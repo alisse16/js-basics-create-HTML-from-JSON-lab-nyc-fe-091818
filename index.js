@@ -44,6 +44,13 @@ function fillInMovieData(){
    li.innerText = castMember.role + ':' + castMember.actor //fill the element
    const div = document.querySelector('#cast')// put it on the page
    div.appendChild(li) //put it on the page 
-}
+    }
+  
+  for (let reveiw of currentMovie.reviews) {
+   const li = document.createElement('li') //make the element 
+   li.innerText = review.username + ':' + review.content //fill the element
+   const div = document.querySelector('#reviews')// put it on the page
+   div.appendChild(li) //put it on the page 
+    }
 }
 
