@@ -53,6 +53,11 @@ function fillInMovieData(movie){
    div.appendChild(li) //put it on the page 
     }
   
+   const reviewsDiv = document.querySelector('#reviews')
+ while (reviewsDiv.hasChildNodes()) {
+   reviewsDiv.removeChild(reviewsDiv.firstChild)
+ }
+  
   for (let review of currentMovie.reviews) {
    const li = document.createElement('li') //make the element 
    li.innerText = review.username + ':' + review.content //fill the element
