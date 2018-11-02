@@ -40,10 +40,10 @@ function fillInMovieData(movie){
   audienceScoreDiv.innerText = audienceScore
   
   //clear out old cast memebers
-  //const castDiv = document.querySelector('#cast')
-  //while (castdiv.hasChildNodes()) {
- //   castDiv.removeChild(castDiv.firstChild)
- // }
+  const castDiv = document.querySelector('#cast')
+ while (castDiv.hasChildNodes()) {
+   castDiv.removeChild(castDiv.firstChild)
+ }
   
   //cast and reviews are arrays
   for (let castMember of currentMovie.cast) {
